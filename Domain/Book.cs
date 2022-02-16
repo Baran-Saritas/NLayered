@@ -14,6 +14,6 @@ namespace Domain
         public string book_name { get; set; }
         [Required]
         public bool alinma_bilgisi { get; set; }
-        public virtual ICollection<Lib_Processes> Lib_Processes { get; set; }
+        public virtual ICollection<Lib_Processes> lib_Processes { get; set; }
     }
 }
