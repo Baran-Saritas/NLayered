@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Domain 
 {
-    class lib_process : BaseEntity
+    public class Lib_Processes : BaseEntity
     {
         [ForeignKey("Student")]
         [Required]

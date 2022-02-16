@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    class Student :BaseEntity
+    public class Student :BaseEntity
     {
         [Required]
         public string first_name { get; set; }
@@ -16,7 +16,7 @@ namespace Domain
         public string last_name { get; set; }
         [Required]
         public string number { get; set; }
-        public virtual ICollection<lib_process> lib_processes { get; set; }
+        public virtual ICollection<Lib_Processes> Lib_Processes { get; set; }
 
     }
 }

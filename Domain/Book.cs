@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    class Book : BaseEntity
+    public class Book : BaseEntity
     {
         [Required]
         public string book_name { get; set; }
         [Required]
         public bool alinma_bilgisi { get; set; }
-
-        public virtual ICollection<lib_process> lib_processes { get; set; }
+        public virtual ICollection<Lib_Processes> Lib_Processes { get; set; }
     }
 }
