@@ -36,7 +36,7 @@ namespace WebAPI
             });
             services.AddDbContext<LibraryContext>(options =>
             {
-                options.UseNpgsql("Host=localhost;Port=5432;User ID=postgres;password=Baran;Database=libraryProject");
+                options.UseNpgsql("Host=localhost;Port=5432;User ID=postgres;password=Baran;Database=libraryDb");
             });
         }
 
