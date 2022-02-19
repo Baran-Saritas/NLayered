@@ -11,7 +11,7 @@ namespace Core.DataAccess
     public interface IEntitiyRepository<TEntity> where TEntity : BaseEntity,new()
     {
         Task AddAsync(TEntity entity);
-        Task UpdateAsync(Guid id, TEntity entity);
+        Task UpdateAsync(TEntity entity);
         Task DeleteAsync(TEntity entity);
         Task DeleteByIdAsync(Guid id);
         Task<TEntity> GetAsync(Expression<Func<TEntity, bool>> predicate);
