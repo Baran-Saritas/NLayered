@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Core.DataAccess
 {
-    public interface IEntitiyRepository<TEntity> where TEntity : BaseEntity,new()
+    public interface IEntityRepository<TEntity> where TEntity : BaseEntity,new()
     {
         Task AddAsync(TEntity entity);
         Task UpdateAsync(TEntity entity);

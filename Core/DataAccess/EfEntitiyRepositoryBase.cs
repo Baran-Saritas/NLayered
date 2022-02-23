@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace Core.DataAccess
 {
-    public class IEntitiyRepositoryBase<TEntity, TContext> : IEntitiyRepository<TEntity>
+    public class EfEntitiyRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
         where TEntity : BaseEntity, new()
         where TContext : DbContext
     {
         protected readonly TContext context;
         protected readonly DbSet<TEntity> DbSet;
 
-        public IEntitiyRepositoryBase(TContext _context)
+        public EfEntitiyRepositoryBase(TContext _context)
         {
             context = _context;
             DbSet = context.Set<TEntity>(); // DbSeti vericek metod
